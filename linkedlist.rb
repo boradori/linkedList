@@ -37,7 +37,7 @@ class LinkedList
     # This is not really deleting a node. It sets the current node to the next node
     if node.next # if the current node has a next node attached to it
       node_to_delete.value = node.next.value # set current node's value to the next node's value
-      node_to_delete.next = node.next.next # set current node's head to the next node's head
+      node_to_delete.next = node.next.next # set current node's pointer to the next node's pointer
     else
       raise Exception("Cannot delete the last node with this method!") # if the current node does not have a next node, it raises exception.
     end
